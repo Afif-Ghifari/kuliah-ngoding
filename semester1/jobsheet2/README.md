@@ -1,0 +1,1 @@
+Halo Github, ini repo "pertama" saya.
