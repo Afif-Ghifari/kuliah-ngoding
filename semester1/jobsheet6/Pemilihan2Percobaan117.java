@@ -11,9 +11,15 @@ public class Pemilihan2Percobaan117 {
 
         // Pemilihan
         if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0) {
-                System.out.println("Tahun " +tahun+ " adalah tahun kabisat");
-            } 
+            if ((tahun % 100) == 0) {
+                if ((tahun % 400) == 0) {
+                    System.out.println("Tahun " +tahun+ " adalah tahun kabisat");
+                } else {
+                    System.out.println("Tahun " +tahun+ " Bukan Tahun kabisat");
+                }
+            } else {
+            System.out.println("Tahun " +tahun+ " Bukan Tahun kabisat");
+            }
         } else {
             System.out.println("Tahun " +tahun+ " Bukan Tahun kabisat");
         }
