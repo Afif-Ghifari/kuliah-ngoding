@@ -12,7 +12,7 @@ public class DoWhileCuti17 {
         System.out.print("Jatah cuti: ");
         jatahCuti = sc.nextInt();
 
-        // Proses perulan sgan
+        // Proses perulangan
         do {
             System.out.print("Apakah anda ingin mengambil cuti (y/t)? ");
             konfirmasi = sc.next();
@@ -27,7 +27,7 @@ public class DoWhileCuti17 {
                     System.out.println("Sisa jatah cuti: " + jatahCuti);
                 } else {
                     System.out.println("Sisa jatah cuti anda tidak mencukupi");
-                    break;
+                    continue;
                 }
             }
         } while (jatahCuti > 0);
