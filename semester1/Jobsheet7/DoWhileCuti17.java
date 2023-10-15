@@ -29,6 +29,9 @@ public class DoWhileCuti17 {
                     System.out.println("Sisa jatah cuti anda tidak mencukupi");
                     continue;
                 }
+            } else{
+                System.out.println("Terima kasih telah memakai program ini");
+                break;
             }
         } while (jatahCuti > 0);
     }    
