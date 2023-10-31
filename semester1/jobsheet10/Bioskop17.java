@@ -14,10 +14,11 @@ public class Bioskop17 {
         penonton[3][0] = "Gisel";
         penonton[3][1] = "Hana";
         
-        
         // Output program
+        System.out.println(penonton.length);
+
         for (int i = 0; i < penonton.length; i++) {
-            System.out.printf("%s \t %s \n", penonton[i][0], penonton[i][1]);
+            System.out.println("Panjang baris ke-"+(i+1)+" : " + penonton[i].length);
             
         }
     }
