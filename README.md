@@ -1,1 +1,1 @@
-Isinya jobsheet yagdaygygaw
+Isinya jobsheet selama kuliah
