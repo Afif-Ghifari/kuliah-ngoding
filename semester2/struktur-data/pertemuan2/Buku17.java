@@ -24,4 +24,36 @@ public class Buku17 {
     void gantiHarga(int hrg) {
         harga = hrg;
     }
+
+    int hitungHargaTotal(int terjual) {
+        int total = harga * terjual;
+        return total;
+    }
+
+    double hitungDiskon(int total) {
+        double diDiskon = 0;
+        if (total > 150000) {
+            diDiskon = total * 0.12;
+        } else if (total > 75000) {
+            diDiskon = total * 0.5;
+        } 
+        return diDiskon;
+    }
+
+    int hitungHargaBayar(int hargaDiskon, double hargaTotal) {
+        int tagihan = (int)hargaTotal - hargaDiskon;
+        return tagihan;
+    }
+
+    public Buku17() {
+
+    }
+
+    public Buku17(String jud, String pg, int hal, int stok, int har) {
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
+    }
 }
