@@ -3,6 +3,7 @@ package latprak1;
 import java.util.Scanner;
 
 public class Kerucut {
+    
     double r, sisiMiring, tinggi;
 
     double hitungVolume(double jr, double sm, double t) {
