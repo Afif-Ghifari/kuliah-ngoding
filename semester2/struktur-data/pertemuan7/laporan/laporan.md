@@ -232,7 +232,7 @@ public class BukuMain17 {
 
 <br>
 
-## 2. PERCOBAAN 2
+    ## 2. PERCOBAAN 2
 
 ### 2.1 Praktikum 2
 
