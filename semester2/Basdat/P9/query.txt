@@ -1,0 +1,42 @@
+-- Active: 1713240712856@@127.0.0.1@3306
+CREATE DATABASE coba_basdat;
+
+USE coba_basdat;
+
+CREATE TABLE mahasiswa 
+    (nim INT(8), nama VARCHAR(30), nomor_telepon VARCHAR(15));
+
+CREATE TABLE matakuliah
+    (kode CHAR(5), nama VARCHAR(30), sks INT(2));
+
+CREATE TABLE nilai
+    (id INT(2), nim INT(8), kode_matakuliah CHAR(5), nilai_huruf CHAR(2));
+
+ALTER TABLE nilai ADD PRIMARY KEY (id);
+
+ALTER TABLE nilai ADD (
+    FOREIGN KEY fk0 (nim) REFERENCES mahasiswa(nim),
+    FOREIGN KEY fk1 (kode_matakuliah) REFERENCES matakuliah(kode)
+);
+
+INSERT INTO mahasiswa (nim, nama, nomor_telepon)
+VALUES  (2341720, "Arif", "0876543219"),
+        (2341721, "Sinta", "0812345678")
+
+INSERT INTO matakuliah (kode, nama, sks)
+VALUES  ("MK018", "SPK", 2);
+
+
+DELETE FROM matakuliah WHERE nama = "SPK";
+SELECT * FROM matakuliah;
+        
+
+INSERT INTO nilai (id, nim, kode_matakuliah, nilai_huruf)
+VALUES  (1, 2341720, "MK012", "B"),
+        (2, 2341720, "MK015", "A"),
+        (3, 2341721, "MK012", "A"),
+        (4, 2341721, "MK015", "B"),
+        (5, 2341721, "MK017", "B")
+
+UPDATE matakuliah SET sks = 2;
+
