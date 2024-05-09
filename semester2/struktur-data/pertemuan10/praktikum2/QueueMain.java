@@ -6,7 +6,8 @@ public class QueueMain {
         System.out.println("1. Antrian baru");
         System.out.println("2. Antrian keluar");
         System.out.println("3. Cek antrian terdepan");
-        System.out.println("4. Cek semua antrian");
+        System.out.println("4. Cek antrian belakang");
+        System.out.println("5. Cek semua antrian");
         System.out.println("----------------------");
     }
 
@@ -41,9 +42,9 @@ public class QueueMain {
                     sc3.nextLine();
                     int umur = sc3.nextInt();
                     System.out.print("Saldo: ");
+                    sc.nextDouble();
                     double saldo = sc3.nextDouble();
                     Nasabah nb = new Nasabah(norek, nama, alamat, umur, saldo);
-                    sc.nextLine();
                     antri.Enqueue(nb);
                     break;
                 case 2:
@@ -55,12 +56,15 @@ public class QueueMain {
                         break;
                     }
                 case 3:
-                antri.peek();
-                break;
+                    antri.peek();
+                    break;
                 case 4:
-                antri.print();
+                    antri.peekRear();
+                    break;
+                case 5:
+                    antri.print();
                     break;
             }
-        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4);
+        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5);
     }
 }

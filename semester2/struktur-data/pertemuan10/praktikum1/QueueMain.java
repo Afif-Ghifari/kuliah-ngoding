@@ -31,14 +31,22 @@ public class QueueMain {
                 case 1:
                     System.out.print("Masukkan data baru: ");
                     int dataMasuk = sc3.nextInt();
-                    Q.Enqueue(dataMasuk);
+                    if (!Q.isFull()) {
+                        Q.Enqueue(dataMasuk);
+                    } else {
+                        System.out.println("Queue sudah penuh");
+                    }
                     break;
                 case 2:
-                    int dataKeluar = Q.Dequeue();
-                    if (dataKeluar !=0) {
-                        System.out.println("Data yang dikeluaran: " + dataKeluar);
-                        break;
+                    if (!Q.isEmpty()) {
+                        int dataKeluar = Q.Dequeue();
+                        if (dataKeluar !=0) {
+                            System.out.println("Data yang dikeluaran: " + dataKeluar);
+                        }    
+                    } else {
+                        System.out.println("Queue masih kosong");
                     }
+                    break;
                 case 3:
                     Q.print();
                     break;
