@@ -317,7 +317,27 @@ VALUES
   (7, 80, '2022-07-13', 6, 'Surat akreditasi jurusan', 'sebuah deskripsi untuk surat ketujuh', 3, 5),
   (8, 75, '2022-08-16', 9, 'Penggunaan Big Data bagi bla bla bla', 'sebuah deskripsi untuk tesis keenam', 1, 1),
   (9, 70, '2022-09-17', 8, 'Pengembangan robotika bagi bla bla bla', 'sebuah deskripsi untuk laporan ketujuh', 2, 4),
-  (10, 65, '2022-10-18', 7, 'Dokumen UKM', 'sebuah deskripsi untuk dok organisasi kedelapan', 3, 3);
+  (10, 65, '2022-10-18', 7, 'Dokumen UKM', 'sebuah deskripsi untuk dok organisasi kedelapan', 3, 3),
+  (11, 14, '2024-01-15', 10, 'Implementasi Algoritma K-Nearest Neighbor dalam Sistem Rekomendasi', 'Penelitian ini membahas implementasi K-NN dalam sistem rekomendasi.', 5, 3),
+  (12, 48, '2024-02-10', 15, 'Pengembangan Aplikasi Berbasis Web untuk E-Commerce', 'Studi kasus pengembangan aplikasi e-commerce menggunakan teknologi web.', 12, 4),
+  (13, 51, '2024-03-05', 8, 'Analisis Keamanan Jaringan Menggunakan Metode Penetration Testing', 'Penelitian ini mengevaluasi keamanan jaringan dengan metode pentest.', 19, 1),
+  (14, 78, '2024-04-18', 12, 'Optimasi Pencarian Data Menggunakan Algoritma Binary Search', 'Menggunakan binary search untuk optimasi pencarian data.', 7, 2),
+  (15, 104, '2024-05-22', 5, 'Rancang Bangun Sistem Informasi Akademik Berbasis Web', 'Desain dan implementasi sistem informasi akademik berbasis web.', 21, 3),
+  (16, 36, '2024-06-12', 18, 'Pemanfaatan Machine Learning dalam Prediksi Harga Saham', 'Prediksi harga saham menggunakan teknik machine learning.', 13, 4),
+  (17, 64, '2024-07-08', 9, 'Sistem Pakar untuk Diagnosa Penyakit Tanaman Padi', 'Menggunakan sistem pakar untuk mendiagnosa penyakit pada tanaman padi.', 4, 2),
+  (18, 26, '2024-08-19', 20, 'Aplikasi Mobile untuk Manajemen Keuangan Pribadi', 'Pengembangan aplikasi mobile untuk membantu manajemen keuangan pribadi.', 16, 5),
+  (19, 124, '2024-09-25', 7, 'Implementasi Teknologi Blockchain pada Sistem Voting Elektronik', 'Menggunakan blockchain untuk sistem voting elektronik yang aman.', 22, 1),
+  (20, 18, '2024-10-15', 11, 'Sistem Pendukung Keputusan untuk Pemilihan Laptop Terbaik', 'SPK untuk membantu memilih laptop terbaik sesuai kebutuhan.', 6, 3),
+  (21, 28, '2024-11-10', 14, 'Penerapan Data Mining untuk Analisis Tren Penjualan', 'Menggunakan data mining untuk menganalisis tren penjualan.', 8, 4),
+  (22, 60, '2024-12-05', 6, 'Analisis Sentimen Media Sosial Menggunakan Naive Bayes', 'Analisis sentimen di media sosial dengan algoritma Naive Bayes.', 11, 2),
+  (23, 172, '2024-01-20', 13, 'Pengembangan Sistem Antrian Rumah Sakit Berbasis RFID', 'Sistem antrian di rumah sakit menggunakan teknologi RFID.', 3, 3),
+  (24, 896, '2024-02-17', 16, 'Optimasi Kinerja Jaringan Menggunakan Load Balancing', 'Implementasi load balancing untuk optimasi kinerja jaringan.', 14, 1),
+  (25, 1536, '2024-03-22', 4, 'Aplikasi Pembelajaran Bahasa Asing Berbasis Mobile', 'Aplikasi mobile untuk pembelajaran bahasa asing.', 18, 5),
+  (26, 1024, '2024-04-12', 19, 'Deteksi Kecurangan dalam Transaksi E-Commerce Menggunakan Random Forest', 'Menggunakan algoritma Random Forest untuk deteksi kecurangan.', 20, 4),
+  (27, 512, '2024-05-28', 9, 'Rancang Bangun Sistem Monitoring Kualitas Udara Berbasis IoT', 'Sistem monitoring kualitas udara dengan teknologi IoT.', 27, 3),
+  (28, 2048, '2024-06-15', 17, 'Penggunaan Augmented Reality untuk Pendidikan Anak Usia Dini', 'Mengembangkan aplikasi AR untuk pendidikan anak usia dini.', 1, 2),
+  (29, 1280, '2024-07-23', 8, 'Sistem Informasi Geografis untuk Pemetaan Daerah Rawan Bencana', 'Menggunakan SIG untuk pemetaan daerah rawan bencana.', 9, 1),
+  (30, 2560, '2024-08-30', 10, 'Pengembangan Aplikasi Fitness Tracker Menggunakan Sensor Wearable', 'Aplikasi fitness tracker dengan sensor wearable.', 25, 5);
 
 INSERT INTO label_dok (`id_Label_dok`, `id_Dokumen`, `Id_Label`) VALUES
   (1, 1, 1),
@@ -331,7 +351,27 @@ INSERT INTO label_dok (`id_Label_dok`, `id_Dokumen`, `Id_Label`) VALUES
   (9, 7, 9),
   (10, 8, 8),
   (11, 9, 4),
-  (12, 10, 9);
+  (12, 10, 9),
+  (21, 1, 2),
+  (22, 2, 3),
+  (23, 3, 4),
+  (24, 4, 5),
+  (25, 5, 6),
+  (26, 6, 1),
+  (27, 7, 3),
+  (28, 8, 4),
+  (29, 9, 5),
+  (30, 10, 6),
+  (31, 11, 1),
+  (32, 12, 2),
+  (33, 13, 4),
+  (34, 14, 5),
+  (35, 15, 6),
+  (36, 16, 1),
+  (37, 17, 2),
+  (38, 18, 3),
+  (39, 19, 4),
+  (40, 20, 5);
 
 
 INSERT INTO History VALUES 
