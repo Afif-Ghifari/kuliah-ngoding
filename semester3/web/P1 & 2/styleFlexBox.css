@@ -1,0 +1,54 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3f3f3f;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+    color: darkgrey;
+}
+
+img{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+a:link{
+    color: darkgray;
+}
+
+a:visited{
+    color: darkcyan;
+}
+
+.container-satu{
+    width: 1000px;
+    margin: 50px auto;
+    background-color: #242424;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+}
+.sidebar-satu{
+    order: 1;
+    width: 25%;
+    padding: 16px;
+    background-color: #323232;
+    
+}
+.kolom-utama{
+    order: 2;
+    width: 50%;
+    padding: 16px;
+    background-color: #323232;
+}
+.sidebar-dua{
+    order: 3;
+    width: 25%;
+    padding: 16px;
+    background-color: #323232;
+}
