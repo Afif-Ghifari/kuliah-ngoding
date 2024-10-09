@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test_Jquery4.css">
+    <script type="text/javascript" src="../jquery/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".tombol11").click(function () {
+                $("div").hide();
+            });
+            $(".tombol12").click(function () {
+                $("div").show();
+            });
+            $(".tombol13").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+            $(".tombol14").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+            $(".tombol15").click(function () {
+                $("#div1").fadeTo("slow", 0.15);
+                $("#div2").fadeTo("slow", 0.4);
+                $("#div3").fadeTo("slow", 0.7);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>jquery effect</p>
+    <div id="div1" class="kotak"></div><br><br>
+    <div id="div2" class="kotak"></div><br><br>
+    <div id="div3" class="kotak"></div><br><br>
+    <button class="tombol11">sembunyikan</button>
+    <button class="tombol12">tampilkan</button>
+    <button class="tombol13">fade out</button>
+    <button class="tombol14">fade in</button>
+    <button class="tombol15">fade to</button>
+</body>
+</html>

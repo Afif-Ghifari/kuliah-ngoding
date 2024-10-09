@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+    <script type="text/javascript" src="../jquery/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btnl").click(function () {
+                $("hl, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+            $(".btn2").click(function () {
+                $("h1, h2, p").removeClass("blue");
+            });
+            $(".btn3").click(function () {
+                $("hi, h2, p, div").css({ "background-color": "yellow", "font-size": "100%" });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <p>this is a paragraph</p>
+    <p>this is another paragraph</p>
+    <div>this is some important text!</div>
+
+    <button class="btnl">add class to elements</button>
+    <button class="btn2">remove class to elements</button>
+    <button class="btn3">set classes to elements</button>
+</body>
+
+</html>
